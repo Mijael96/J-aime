@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.btn-primary {
+    display: block;
+    margin: 0 auto;
+}
+
+form input {
+    width: 750px;
+}
+
+label {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 155px;
+}
+
+.agregar {
+    width: 350px;
+}
+
+.form-group {
+    display: block;
+    margin: 0 auto;
+}
+
+.agregar, .form-control {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+   
+}
