@@ -181,6 +181,10 @@ Route::get('/administrador', function () {
     return view('iniciarsesionadmin');
 });
 
+Route::get('/administrador/menu', function () {
+    return view('menuadmin');
+});
+
 Route::get('/administrador/agregarproducto', function() {
     return view('agregarproducto');
 });
@@ -207,7 +211,8 @@ Route::get('/administrador/agregaradministrador', function() {
 
 Route::post('/administrador/agregaradministrador', 'AdministradorController@agregar');
 
-Route::get('/administrador/administradores', 'AdministradorController@listado');
+
+Route::get('/administrador/listaadministradores', 'AdministradorController@listado');
 
 
 Route::get('/administrador/modificaradministrador', function() {

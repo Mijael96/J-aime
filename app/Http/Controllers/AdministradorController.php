@@ -18,4 +18,9 @@ class AdministradorController extends Controller
         $nuevoAdmin->save();
         return redirect("/administrador/agregaradministrador");
     }
+
+    public function listado() {
+        $administradores = Admin::all();
+        dd($administradores);
+    }
 }

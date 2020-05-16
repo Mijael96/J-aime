@@ -13,10 +13,10 @@
   </head>
   
   <body>
-  <div class="container-fluid"> 
+    <div class="container-fluid"> 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container">
-          <a class="navbar-brand" href="#">Usuario</a>
+          <button class="btn btn-outline-success" type="button">Usuario</button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,7 +29,7 @@
                 <a class="nav-item nav-link" href="#">Secciones</a>
               </div>
             </div>
-            <a class="navbar-brand" href="#">Salir</a>
+            <button class="btn btn-outline-danger" type="button">Salir</button>
             </div>
           </nav>
           <br>
@@ -38,7 +38,6 @@
             @yield("principal")
           </section>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
