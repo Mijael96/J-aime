@@ -221,4 +221,19 @@ Route::get('/administrador/modificaradministrador', function() {
 
 Route::post('/administrador/modificaradministrador', 'AdministradoresController@modificar');
 
+Route::get('/administrador/listadeproductos', function() {
+    return view('listaproductos');
+});
+
+Route::get('/administrador/listadeusuarios', function() {
+    return view('listadeusuarios');
+});
+
+Route::get('/administrador/listadesecciones', function() {
+    return view('listadesecciones');
+});
+
+Route::get('/administrador/listadeadministradores', function() {
+    return view('listadeadministradores');
+});
 
