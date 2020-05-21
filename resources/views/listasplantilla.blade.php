@@ -22,11 +22,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav m-auto">
-                <a class="nav-item nav-link" href="#">Inicio</a>
-                <a class="nav-item nav-link" href="#">Lista de productos</a>
-                <a class="nav-item nav-link" href="#">Lista de usuarios</a>
-                <a class="nav-item nav-link" href="#">Administradores</a>
-                <a class="nav-item nav-link" href="#">Secciones</a>
+                <a class="nav-item nav-link" href="/administrador/menu">Inicio</a>
+                <a class="nav-item nav-link" href="/administrador/listaproductos">Lista de productos</a>
+                <a class="nav-item nav-link" href="/administrador/listadeusuario">Lista de usuarios</a>
+                <a class="nav-item nav-link" href="/administrador/listaadministradores">Administradores</a>
+                <a class="nav-item nav-link" href="/administrador/listadesecciones">Secciones</a>
               </div>
             </div>
             <button class="btn btn-outline-danger" type="button">Salir</button>

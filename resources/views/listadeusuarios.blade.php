@@ -22,12 +22,25 @@
                   </tr>
                 </thead>
                 <tbody>
+                <?php
+                $numeracion = 1;
+                ?>
+
+                  @foreach($usuarios as $user)
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Mijael Volker</td>
-                      <td>Mijael_Volker@hotmail.com</td>
-                      <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                      <th scope="row">{{$numeracion++}}</th>
+                      <td>{{$user["name"]}}</td>
+                      <td>{{$user["email"]}}</td>
+                      <td>
+                      
+                      <form action="/eliminarusuario" method="post">
+                      {{csrf_field()}}
+                      <input type="hidden" name="id" value="{{$user["id"]}}">
+                      <input type="submit" class="btn btn-danger borrar" value="Eliminar">
+                      </form>
+                      </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
           </nav>

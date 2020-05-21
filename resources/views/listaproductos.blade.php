@@ -20,18 +20,48 @@
                     <th scope="col">Sección</th>
                     <th scope="col">Precio</th>
                     <th scope="col">Stock</th>
-                    <th scope="col">Opciones</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Modificar</th>
+                    <th scope="col">Eliminar</th>
 
                   </tr>
                 </thead>
                 <tbody>
+                <?php
+                  $numeracion=1;
+                ?>
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Musica 01</td>
-                      <td>Musica</td>
-                      <td>$575</td>
-                      <td>50</td>
-                      <td><button type="button" class="btn btn-warning">Modificar</button><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    @foreach($todos as $todo)
+                    <tr>
+                      <th scope="row">{{$numeracion++}}</th>
+                      <td>{{$todo["name"]}}</td>
+                      <td>@if($todo["seccion"] == 8)cocina
+                      @elseif($todo["seccion"] == 9)infantil
+                      @elseif($todo["seccion"] == 12)frases
+                      @elseif($todo["seccion"] == 13)zen
+                      @else musica
+                      @endif</td>
+                      <td>{{$todo["precio"]}}</td>
+                      <td>{{$todo["stock"]}}</td>
+                      <td><img src="/storage/{{$todo["imagen"]}}" class="imagenlista"></td>
+          
+                      
+                      <td>
+                      <div class="container">
+                      <div class="row">
+                      <button class="btn btn-warning"><a href="/administrador/modificarproducto{{$todo["id"]}}">Modificar</a></button>
+                      </td>
+                      <td>
+                      <form action="/eliminarproducto" method="post">
+                      {{csrf_field()}}
+                      <input type="hidden" name="id" value="{{$todo["id"]}}">
+                      <input type="submit" class="btn btn-danger borrar" value="Eliminar">
+                      </form>
+                      </div>
+                      </div>
+                      </td>
+                    </tr>
+                    @endforeach
                     </tr>
                 </tbody>
             </table>

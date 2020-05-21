@@ -5,15 +5,13 @@
             <h3>Menú</h3>
             <br>
             <br>
-            <button type="button" class="boton btn btn-outline-primary" href="index"><a href="/">Ver Pagina</a></button>
-            <br>
-            <br>
+            
             <div class="row d-flex justify-content-around">
                 <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-primary"><a href="/administrador/listadeproductos">Lista de productos</a></button>
+                    <button type="button" class="boton btn btn-outline-primary"><a href="/administrador/listaproductos">Lista de productos</a></button>
                  </div>
                  <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-success"><a href="/administrador/listadeusuarios">Lista de usuarios</a></button>
+                    <button type="button" class="boton btn btn-outline-success"><a href="/administrador/listadeusuario">Lista de usuarios</a></button>
                  </div>
             </div>
 
@@ -22,7 +20,7 @@
 
             <div class="row d-flex justify-content-around">
                 <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-warning"><a href="/administrador/listadeadministradores">Administradores</a></button>
+                    <button type="button" class="boton btn btn-outline-warning"><a href="/administrador/listaadministradores">Administradores</a></button>
                  </div>
                  <div class="col-md-5">
                     <button type="button" class="boton btn btn-outline-success"><a href="/administrador/listadesecciones">Secciones</a></button>

@@ -185,24 +185,28 @@ Route::get('/administrador/menu', function () {
     return view('menuadmin');
 });
 
-Route::get('/administrador/agregarproducto', function() {
-    return view('agregarproducto');
-});
+Route::get('/administrador/listaproductos', 'ProductosController@listado');
 
-Route::post('/administrador/agregarproducto', 'ProductosController@agregar');
+Route::get('/administrador/agregarproducto', 'ProductosController@formulario');
 
-Route::get('/administrador/modificarproducto', function() {
-    return view('modificarproducto');
-});
+Route::post('/administrador/agregarproductos', 'ProductosController@agregar');
 
-Route::post('/administrador/modificarproducto', 'ProductosController@modificar');
 
+Route::get('/administrador/modificarproducto{id}', 'ProductosController@modificar');
+
+Route::put('/administrador/modificarproductos{id}', 'ProductosController@editar');
+
+Route::get('/administrador/modificarsecciones{id}', 'SeccionesController@modificar');
+
+Route::put('/administrador/modificarseccion{id}', 'SeccionesController@editar');
 
 Route::get('/administrador/agregarseccion', function() {
     return view('agregarseccion');
 });
 
 Route::post('/administrador/agregarseccion', 'SeccionesController@agregar');
+
+Route::post('/eliminarseccion', 'SeccionesController@borrar');
 
 
 Route::get('/administrador/agregaradministrador', function() {
@@ -215,25 +219,26 @@ Route::post('/administrador/agregaradministrador', 'AdministradorController@agre
 Route::get('/administrador/listaadministradores', 'AdministradorController@listado');
 
 
-Route::get('/administrador/modificaradministrador', function() {
-    return view('modificaradmin');
-});
-
-Route::post('/administrador/modificaradministrador', 'AdministradoresController@modificar');
+Route::get('/administrador/modificaradministrador{id}', 'AdministradorController@modificar');
 
 Route::get('/administrador/listadeproductos', function() {
     return view('listaproductos');
 });
 
-Route::get('/administrador/listadeusuarios', function() {
-    return view('listadeusuarios');
-});
 
-Route::get('/administrador/listadesecciones', function() {
-    return view('listadesecciones');
-});
+Route::get('/administrador/listadesecciones', 'SeccionesController@listado');
 
 Route::get('/administrador/listadeadministradores', function() {
     return view('listadeadministradores');
 });
+
+Route::get('/administrador/listadeusuario', 'UsuarioController@listado');
+
+Route::post('/eliminarusuario', 'UsuarioController@borrar');
+
+Route::post('/eliminarproducto', 'ProductosController@borrar');
+
+Route::post('/eliminaradministrador', 'AdministradorController@borrar');
+
+Route::put('/administrador/modificaradmin{id}', 'AdministradorController@editar');
 
