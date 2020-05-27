@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet"> <!-- lo cambiamos -->
 	<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+	<link rel="icon" type="\Imagenes\logonuevosinsombra.png" href="\Imagenes\logonuevosinsombra.png" />
 
 
 </head>
