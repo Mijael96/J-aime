@@ -63,6 +63,11 @@
                                         {{ __('Olvidaste tu contraseña?') }}
                                     </a>
                                 @endif
+                                 
+                                <br>
+                                    <a class="btn btn-link" style="display:block;" href="{{('register') }}">
+                                        {{ __('registrate') }}
+                                    </a>
                             </div>
                         </div>
 
