@@ -1,17 +1,21 @@
-
 @extends('plantillaadmin')
-
+@extends('layouts.app2')
 @section('principal')
+@section('content')
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header"><h3>{{ __('Iniciar Sesion') }}</h3></div >
 
-
-               
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
-                        <div class="form-group ">
-                            <label for="email" class="" style="text-align:center;">{{ __('E-Mail') }}</label>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
-                            <div class="">
+                            <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -22,10 +26,10 @@
                             </div>
                         </div>
                                     <br>
-                        <div class="form-group ">
-                            <label for="password" class="">{{ __('Contraseña') }}</label>
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
-                            <div class="">
+                            <div class=>
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
@@ -47,8 +51,7 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
-
+                        
                                 <br>
 
                         <div class="">
@@ -70,8 +73,12 @@
                                     </a>
                             </div>
                         </div>
-
+                </div>
                         <br>
                     </form>
-              
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

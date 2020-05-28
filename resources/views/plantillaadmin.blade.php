@@ -16,7 +16,7 @@
     <div class="container">
         
         <div class="logo">
-            <img src="/Imagenes/logonuevosinsombra.png" class="logo">
+
         </div>
         <br>
 
