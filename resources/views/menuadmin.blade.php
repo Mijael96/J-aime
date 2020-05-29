@@ -1,47 +1,28 @@
-
 @extends("plantillaadmin")
 @section("principal")
 
-        <div class="menu">
-            <h3>Menú</h3>
-            <br>
-            <br>
-            
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-primary"><a href="/administrador/listaproductos">Lista de productos</a></button>
-                 </div>
-                 <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-success"><a href="/administrador/listadeusuario">Lista de usuarios</a></button>
-                 </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="row d-flex justify-content-around">
-                <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-warning"><a href="/administrador/listaadministradores"><a class="" style="text-align:center; display:block; margin: 0 auto;" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form></a></button>
-                 </div>
-                 <div class="col-md-5">
-                    <button type="button" class="boton btn btn-outline-success"><a href="/administrador/listadesecciones">Secciones</a></button>
-                 </div>
-            </div>
-                 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header"><h3>{{ __('Menu') }}</h3></div >
+                    <div class="card-body">
+                        <form action="/administrador/listaproductos"><input type="submit" style="width:100%" value="Lista de Productos" /> </form>
+                    </div>
+                        
+                    <div class="card-body">
+                        <form action="/administrador/listadeusuario"><input type="submit" style="width:100%" value="Lista de Usuarios" /> </form>
+                    </div>
+                        
+                    <div class="card-body">
+                        <form action="/administrador/listadesecciones"><input type="submit" style="width:100%" value="Secciones" /> </form>
+                    </div>
+                </div>
+             </div>
         </div>
-
-      
-                           
-
-                      
+    </div>
+</div>
+               
 
 @endsection
     
