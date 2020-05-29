@@ -32,7 +32,7 @@
 		<div class="container menu">
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<!-------------------INICIO SESION---------------------------->
-  			<a href="../login-out/logIn.php"><i class="fas fa-users carrito"></i></a>
+  		<a href="/login"><i class="fas fa-users carrito"></i></a>
   			<!-------------------INICIO SESION---------------------------->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -88,7 +88,7 @@
 
                     <div class="col-md-3 col-sm-12">
                         <a href="/utensillos"><img src="/Imagenes/cocina3.jpg"></a>
-                        <h3><a href="productos/utensillos.html">Utensillos</a></h3>
+                        <h3><a href="productos/utensillos.html">Utensilios</a></h3>
                         
                     </div>
 

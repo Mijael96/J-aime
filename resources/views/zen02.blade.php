@@ -34,7 +34,7 @@
 		<div class="container menu">
 		<nav class="navbar navbar-expand-lg navbar-light bg-white">
 			<!-------------------INICIO SESION---------------------------->
-  			<a href="../login-out/logIn.php"><i class="fas fa-users carrito"></i></a>
+			<a href="/login"><i class="fas fa-users carrito"></i></a>
   			<!-------------------INICIO SESION---------------------------->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
