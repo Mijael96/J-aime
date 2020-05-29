@@ -7,7 +7,7 @@
             <h2 style="text-align: center;">Productos</h2>
             <br>
             <br>
-            <button type="button" class="agregar btn btn-primary btn-lg">Agregar Producto</button>
+            <form class="" action="/administrador/agregarproductos" method="post" > <button type="button" class="agregar btn btn-primary btn-lg">Agregar Producto</button></form>
 
             <br>
             <br>
