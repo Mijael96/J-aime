@@ -9,7 +9,7 @@
             <br>
             <form method="GET" action="{{('/administrador/agregarseccion') }}"> 
             @csrf             
-            <button type="submit" class="agregar btn btn-primary btn-lg">Agregar Producto</button> 
+            <button type="submit" class="agregar btn btn-primary btn-lg">Agregar Sección</button> 
             </form>
 
             <br>
