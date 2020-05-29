@@ -1,4 +1,4 @@
-@extends("agregarplantilla")
+@extends("listasplantilla")
 @section("principal")
 
         <form class="" action="/administrador/agregarseccion" method="post">

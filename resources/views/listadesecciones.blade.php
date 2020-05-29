@@ -7,7 +7,10 @@
             <h2 style="text-align: center;">Secciones</h2>
             <br>
             <br>
-            <button type="button" class="agregar btn btn-primary btn-lg">Agregar Seccion</button>
+            <form method="GET" action="{{('/administrador/agregarseccion') }}"> 
+            @csrf             
+            <button type="submit" class="agregar btn btn-primary btn-lg">Agregar Producto</button> 
+            </form>
 
             <br>
             <br>

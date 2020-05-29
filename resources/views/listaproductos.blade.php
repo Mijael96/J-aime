@@ -7,7 +7,10 @@
             <h2 style="text-align: center;">Productos</h2>
             <br>
             <br>
-            <form class="" action="/administrador/agregarproductos" method="post" > <button type="button" class="agregar btn btn-primary btn-lg">Agregar Producto</button></form>
+            <form method="GET" action="{{('/administrador/agregarproducto') }}"> 
+            @csrf             
+            <button type="submit" class="agregar btn btn-primary btn-lg">Agregar Producto</button> 
+            </form>
 
             <br>
             <br>

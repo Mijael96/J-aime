@@ -1,9 +1,9 @@
-@extends("agregarplantilla")
+@extends("listasplantilla")
 @section("principal")
 
-            <form class="" action="/administrador/agregarproductos" method="post" enctype="multipart/form-data">
+<form class="" action="{{URL::to('/administrador/agregarproductos')}}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
-            {{ method_field('PUT') }}
+            {{ method_field('POST') }}
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nombre del producto</label>
                   <input type="text" class="agregar form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre del producto" name="name" value="{{old("name")}}">
